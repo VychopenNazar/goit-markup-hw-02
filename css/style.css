@@ -5,9 +5,12 @@
     --main-bg-clr: #ffffff;
     --second-bg-clr: #2F303A;
     --second-txt-color: #000000;
+    --btn-bg-clr: #F5F4FA;
+    --border-radius: 4px;
 }
 body {
     color: var(--txt-clr);
+    font-family: "Raleway";
     font-family: "Roboto";
     background-color: var(--main-bg-clr);
     position: relative;
@@ -45,7 +48,7 @@ header {
     height: 31px;
     left: 215px;
     top: 24px;
-    font-family: 'Raleway';
+    font-family: "Raleway";
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
@@ -139,7 +142,6 @@ footer {
     height: 21px;
     left: 215px;
     top: 2205px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -153,7 +155,6 @@ footer {
     height: 21px;
     left: 215px;
     top: 2235px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -167,7 +168,6 @@ footer {
     height: 21px;
     left: 215px;
     top: 2265px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -193,7 +193,6 @@ footer {
     height: 120px;
     left: 452px;
     top: 280px;
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
@@ -211,4 +210,216 @@ footer {
     top: 430px;
     color: var(--main-bg-clr);
     background-color: var(--main-clr);
+    border-radius: var(--border-radius);
+}
+
+/* факти */
+
+.facts {
+    width: 1170px;
+    height: 98px;
+    left: 215px;
+    top: 774px;
+}
+
+.facts>h2 {
+    display: none;
+}
+
+.facts h3 {
+    width: 270px;
+    height: 16px;
+    left: 215px;
+    top: 774px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--title-clr);
+}
+
+.facts p {
+        width: 270px;
+        height: 72px;
+        left: 215px;
+        top: 800px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: 0.03em;
+        color: var(--txt-clr);
+}
+
+/* Чим ми займаємося */
+
+.our-work{
+    width: 1170px;
+    height: 386px;
+    left: 215px;
+    top: 966px;
+}
+
+.our-work>h2 {
+        width: 366px;
+        height: 42px;
+        left: 617px;
+        top: 966px;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 42px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        color: var(--title-clr);
+}
+
+
+/* Команда */
+.our-comand {   
+    width: 1600px;
+    height: 648px;
+    left: 0px;
+    top: 1446px;
+    background: #F5F4FA;
+}
+
+.our-comand>h2 {
+    width: 264px;
+    height: 42px;
+    left: 668px;
+    top: 1540px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-clr);
+}
+.our-comand-list {
+    width: 1170px;
+    height: 368px;
+    left: 215px;
+    top: 1632px;
+}
+
+.comand-card{
+    width: 270px;
+    height: 368px;
+    left: 215px;
+    top: 1632px;
+    background: var(--main-bg-clr);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.comand-card>h3 {
+    width: 129px;
+    height: 19px;
+    left: 286px;
+    top: 1922px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-clr);
+}
+
+.comand-card>p {
+    width: 130px;
+    height: 19px;
+    left: 285px;
+    top: 1951px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--txt-clr);
+}
+
+/* Портфоліо */
+
+.portfolio {
+    width: 1170px;
+    height: 1360px;
+    left: 215px;
+    top: 174px;
+}
+
+/* Кнопки навігації */
+
+.buttons>h2 {
+    display: none;
+}
+
+.portfolio-buttons {
+    width: 575px;
+    height: 54px;
+    left: 512px;
+    top: 174px;  
+}
+
+.portfolio-list {
+    width: 125px;
+    height: 38px;
+    left: 593px;
+    top: 174px;
+    background: var(--btn-bg-clr);
+    border-radius: var(--border-radius);
+    color: var(--title-clr);
+}
+
+.portfolio-list:hover {
+    background: var(--main-clr);
+    color: var(--main-bg-clr);
+}
+
+/* Головне портфоліо */
+
+.portfolio-main-list {
+    display:list-item;
+}
+
+.portfolio-main>h2 {
+    display: none;
+}
+
+.portfolio-main-item{
+    width: 370px;
+    height: 404px;
+    left: 215px;
+    top: 696px;
+}
+
+.portfolio-main-item>h3{
+    width: 322px;
+    height: 36px;
+    left: 239px;
+    top: 576px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 36px;
+    letter-spacing: 0.06em;
+    color: var(--title-clr);
+}
+
+.portfolio-main-item>p {
+    width: 322px;
+    height: 30px;
+    left: 239px;
+    top: 616px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    color: var(--txt-clr);
 }
