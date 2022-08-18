@@ -359,24 +359,14 @@ footer {
     display: none;
 }
 
-.portfolio-buttons {
-    width: 575px;
-    height: 54px;
-    left: 512px;
-    top: 174px;  
-}
-
 .portfolio-list {
-    width: 125px;
-    height: 38px;
-    left: 593px;
-    top: 174px;
     background: var(--btn-bg-clr);
     border-radius: var(--border-radius);
     color: var(--title-clr);
 }
 
-.portfolio-list:hover {
+.portfolio-list:hover,
+.portfolio-list:focus {
     background: var(--main-clr);
     color: var(--main-bg-clr);
 }
