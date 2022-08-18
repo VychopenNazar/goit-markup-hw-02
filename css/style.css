@@ -1,7 +1,10 @@
 :root {
     --main-clr: #2196F3;
-    --txt-clr: #212121;
+    --title-clr: #212121;
+    --txt-clr: #757575;
     --main-bg-clr: #ffffff;
+    --second-bg-clr: #2F303A;
+    --second-txt-color: #000000;
 }
 body {
     color: var(--txt-clr);
@@ -9,94 +12,187 @@ body {
     background-color: var(--main-bg-clr);
     position: relative;
     width: 1600px;
-}
-/* хедер */
-.logo {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: calc(31 / 26);
-    letter-spacing: 0.03em;
-    color: #000000;
-    text-decoration: none;
-}
-
-header {
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
+    height: 2346px;
 }
 
 span {
     color: var(--main-clr);
 }
 
+a {
+    text-decoration: none;
+    color: var(--title-clr)
+}
+
+
 ul {
     list-style: none;
     display: inline-flex;
 }
 
-a {
-    text-decoration: none;
+/* хедер */
+
+header {
+    width: 1600px;
+    height: 80px;
+    left: 0px;
+    top: 0px;
+    background-color: var(--main-bg-clr);
 }
 
-.logo {
-    padding: 24px 93px 25px 215px;
+.logo-top {
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 24px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--second-txt-color);
 }
 
-.address {
-    display: list-item;
-    
-}
 
-.horisontal-nav {
+.navigate{
     width: 281px;
     height: 16px;
     left: 453px;
     top: 32px;
-    display: inline-flex;
-    padding: 32px 93px 32px 344px;
-    vertical-align:baseline;
+    color: var(--title-clr);
+}
+
+.link-studio:hover,
+.link-studio:focus{
+    color: var(--main-clr);
+}
+
+.link-portfolio:hover,
+.link-portfolio:focus {
+    color: var(--main-clr);
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+    color: var(--main-clr);
+}
+
+.contact a {
     color: var(--txt-clr);
 }
 
-.horisontal-nav [href="./index.html"] {
-    padding: 0px 50px 0px 0px;
-}
-
-.horisontal-nav [href="./portfolio.html"] {
-    padding: 0px 50px 0px 0px;
-}
-
-.horisontal-ul [href="mailto:info@devstudio.com"] {
+.contact-mail {
     width: 135px;
     height: 16px;
     left: 1078px;
     top: 32px;
-    padding: 32px 50px 32px 344px;
 }
 
-.horisontal-ul [href="tel:+380961111111"] {
+.contact-tel{
     width: 122px;
     height: 16px;
     left: 1263px;
     top: 32px;
-    padding: 32px 93px 32px 50px;
 }
 
-/* шапка */
+.contact-mail:hover,
+.contact-mail:focus {
+    color: var(--main-clr);
+}
+
+.contact-tel:hover,
+.contact-tel:focus {
+    color: var(--main-clr);
+}
+
+/* футер */
+
+footer {
+    width: 1600px;
+    height: 252px;
+    left: 0px;
+    top: 2094px;
+    background: var(--second-bg-clr);
+}
+
+.logo-down {
+    width: 145px;
+    height: 31px;
+    left: 215px;
+    top: 2154px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: var(--main-bg-clr)
+}
+
+.location {
+    display: list-item;
+}
+
+.location-link {
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 2205px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: var(--main-bg-clr);
+}
+
+.location-mail {
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 2235px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.location-tel {
+    width: 231px;
+    height: 21px;
+    left: 215px;
+    top: 2265px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* основна сторінка */
+
+/* Шапка */
 
 .main-page {
     width: 1600px;
     height: 600px;
     left: 0px;
     top: 80px;
-    background: #2F303A;
+    background: var(--second-bg-clr);
 }
 
 .wrapper>h1 {
+    width: 696px;
+    height: 120px;
+    left: 452px;
+    top: 280px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 900;
@@ -105,56 +201,14 @@ a {
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: #FFFFFF;
-    padding: 200px 452px 30px 452px;
+    color: var(--main-bg-clr);
 }
 
-.wrapper>button {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 700;
+.main-button {
     width: 216px;
     height: 50px;
     left: 692px;
     top: 430px;
+    color: var(--main-bg-clr);
     background-color: var(--main-clr);
-    border-radius: 4px;
-    border: 0;
-    margin: 30px 692px 20px 692px;
 }
-
-/* Особливості */
-
-.facts>h2 {
-    display: none;
-    padding: 94px 215px 94px 215px;
-}
-
-.facts>ul {
-    width: 1170px;
-    height: 98px;
-    left: 215px;
-    top: 774px;
-}
-
-.facts>h3 {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 16px;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;   
-    color: var(--txt-clr);
-}
-
-.facts>p {
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;    
-    color: #757575;
-}
-
