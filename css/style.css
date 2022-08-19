@@ -52,7 +52,7 @@ header {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--second-txt-color);
 }
@@ -128,7 +128,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
-    line-height: 31px;
+    line-height: calc(31 / 26);
     letter-spacing: 0.03em;
     color: var(--main-bg-clr)
 }
@@ -145,7 +145,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: var(--main-bg-clr);
 }
@@ -158,7 +158,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -171,7 +171,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 24px;
+    line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
@@ -196,7 +196,7 @@ footer {
     font-style: normal;
     font-weight: 900;
     font-size: 44px;
-    line-height: 60px;
+    line-height: calc(60 / 44);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
@@ -211,6 +211,7 @@ footer {
     color: var(--main-bg-clr);
     background-color: var(--main-clr);
     border-radius: var(--border-radius);
+    cursor: pointer;
 }
 
 /* факти */
@@ -234,7 +235,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     font-size: 14px;
-    line-height: 16px;
+    line-height: calc(16 / 14);
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--title-clr);
@@ -248,7 +249,7 @@ footer {
         font-style: normal;
         font-weight: 400;
         font-size: 14px;
-        line-height: 24px;
+        line-height: calc(24 / 14);
         letter-spacing: 0.03em;
         color: var(--txt-clr);
 }
@@ -270,7 +271,7 @@ footer {
         font-style: normal;
         font-weight: 700;
         font-size: 36px;
-        line-height: 42px;
+        line-height: calc(42 / 36);
         text-align: center;
         letter-spacing: 0.03em;
         color: var(--title-clr);
@@ -294,7 +295,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     font-size: 36px;
-    line-height: 42px;
+    line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-clr);
@@ -324,7 +325,7 @@ footer {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-clr);
@@ -338,7 +339,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
+    line-height: calc(19 / 16);
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--txt-clr);
@@ -359,23 +360,22 @@ footer {
     display: none;
 }
 
-.portfolio-list {
+.portfolio-list>button {
     background: var(--btn-bg-clr);
     border-radius: var(--border-radius);
     color: var(--title-clr);
+    cursor: pointer;
 }
 
-.portfolio-list:hover,
-.portfolio-list:focus {
+.portfolio-list>button:hover,
+.portfolio-list>button:focus {
     background: var(--main-clr);
     color: var(--main-bg-clr);
 }
 
 /* Головне портфоліо */
 
-.portfolio-main-list {
-    display:list-item;
-}
+
 
 .portfolio-main>h2 {
     display: none;
@@ -396,7 +396,7 @@ footer {
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
-    line-height: 36px;
+    line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--title-clr);
 }
@@ -409,7 +409,7 @@ footer {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 30px;
+    line-height: calc(30 / 16);
     letter-spacing: 0.03em;
     color: var(--txt-clr);
 }
