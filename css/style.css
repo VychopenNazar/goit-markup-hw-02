@@ -10,12 +10,8 @@
 }
 body {
     color: var(--txt-clr);
-    font-family: "Raleway";
-    font-family: "Roboto";
+    font-family: 'Roboto', sans-serif;
     background-color: var(--main-bg-clr);
-    position: relative;
-    width: 1600px;
-    height: 2346px;
 }
 
 span {
@@ -36,20 +32,11 @@ ul {
 /* хедер */
 
 header {
-    width: 1600px;
-    height: 80px;
-    left: 0px;
-    top: 0px;
     background-color: var(--main-bg-clr);
 }
 
 .logo-top {
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 24px;
-    font-family: "Raleway";
-    font-style: normal;
+    font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
@@ -58,26 +45,16 @@ header {
 }
 
 
-.navigate{
-    width: 281px;
-    height: 16px;
-    left: 453px;
-    top: 32px;
+.navigate-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
     color: var(--title-clr);
 }
 
-.link-studio:hover,
-.link-studio:focus{
-    color: var(--main-clr);
-}
-
-.link-portfolio:hover,
-.link-portfolio:focus {
-    color: var(--main-clr);
-}
-
-.link-contacts:hover,
-.link-contacts:focus {
+.navigate-link:hover,
+.navigate-link:focus{
     color: var(--main-clr);
 }
 
@@ -85,18 +62,18 @@ header {
     color: var(--txt-clr);
 }
 
-.contact-mail {
-    width: 135px;
-    height: 16px;
-    left: 1078px;
-    top: 32px;
+.contact-mail{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 
-.contact-tel{
-    width: 122px;
-    height: 16px;
-    left: 1263px;
-    top: 32px;
+.contact-tel {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
 }
 
 .contact-mail:hover,
@@ -112,21 +89,11 @@ header {
 /* футер */
 
 footer {
-    width: 1600px;
-    height: 252px;
-    left: 0px;
-    top: 2094px;
     background: var(--second-bg-clr);
 }
 
 .logo-down {
-    width: 145px;
-    height: 31px;
-    left: 215px;
-    top: 2154px;
     font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
     font-size: 26px;
     line-height: calc(31 / 26);
     letter-spacing: 0.03em;
@@ -138,12 +105,6 @@ footer {
 }
 
 .location-link {
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2205px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -151,12 +112,6 @@ footer {
 }
 
 .location-mail {
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2235px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
@@ -164,36 +119,27 @@ footer {
 }
 
 .location-tel {
-    width: 231px;
-    height: 21px;
-    left: 215px;
-    top: 2265px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: calc(24 / 14);
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
 
+.location-mail:hover,
+.location-mail:focus {
+    color: var(--main-clr);
+}
+
+.location-tel:hover,
+.location-tel:focus {
+    color: var(--main-clr);
+}
+
 /* основна сторінка */
 
 /* Шапка */
 
-.main-page {
-    width: 1600px;
-    height: 600px;
-    left: 0px;
-    top: 80px;
-    background: var(--second-bg-clr);
-}
-
 .wrapper>h1 {
-    width: 696px;
-    height: 120px;
-    left: 452px;
-    top: 280px;
-    font-style: normal;
     font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -201,39 +147,27 @@ footer {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-bg-clr);
+    background: var(--second-bg-clr);
 }
 
 .main-button {
-    width: 216px;
-    height: 50px;
-    left: 692px;
-    top: 430px;
     color: var(--main-bg-clr);
     background-color: var(--main-clr);
     border-radius: var(--border-radius);
     cursor: pointer;
 }
 
-/* факти */
-
-.facts {
-    width: 1170px;
-    height: 98px;
-    left: 215px;
-    top: 774px;
+.now {
+    color: var(--main-clr);
 }
 
-.facts>h2 {
+/* факти */
+
+.about-title {
     display: none;
 }
 
-.facts h3 {
-    width: 270px;
-    height: 16px;
-    left: 215px;
-    top: 774px;
-    font-style: normal;
-    font-weight: 700;
+.about-list-title {
     font-size: 14px;
     line-height: calc(16 / 14);
     letter-spacing: 0.03em;
@@ -241,89 +175,45 @@ footer {
     color: var(--title-clr);
 }
 
-.facts p {
-        width: 270px;
-        height: 72px;
-        left: 215px;
-        top: 800px;
-        font-style: normal;
-        font-weight: 400;
+.about-list-text {
         font-size: 14px;
         line-height: calc(24 / 14);
         letter-spacing: 0.03em;
-        color: var(--txt-clr);
 }
 
 /* Чим ми займаємося */
 
-.our-work{
-    width: 1170px;
-    height: 386px;
-    left: 215px;
-    top: 966px;
-}
-
-.our-work>h2 {
-        width: 366px;
-        height: 42px;
-        left: 617px;
-        top: 966px;
-        font-style: normal;
-        font-weight: 700;
-        font-size: 36px;
-        line-height: calc(42 / 36);
-        text-align: center;
-        letter-spacing: 0.03em;
-        color: var(--title-clr);
-}
-
-
-/* Команда */
-.our-comand {   
-    width: 1600px;
-    height: 648px;
-    left: 0px;
-    top: 1446px;
-    background: #F5F4FA;
-}
-
-.our-comand>h2 {
-    width: 264px;
-    height: 42px;
-    left: 668px;
-    top: 1540px;
-    font-style: normal;
-    font-weight: 700;
+.section-title {
     font-size: 36px;
     line-height: calc(42 / 36);
     text-align: center;
     letter-spacing: 0.03em;
-    color: var(--title-clr);
-}
-.our-comand-list {
-    width: 1170px;
-    height: 368px;
-    left: 215px;
-    top: 1632px;
 }
 
-.comand-card{
-    width: 270px;
-    height: 368px;
-    left: 215px;
-    top: 1632px;
+.section-title {
+    color: var(--title-clr);
+}
+
+
+/* Команда */
+.team {   
+    background: #F5F4FA;
+}
+
+.section-title {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.team-list{
     background: var(--main-bg-clr);
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 }
 
-.comand-card>h3 {
-    width: 129px;
-    height: 19px;
-    left: 286px;
-    top: 1922px;
-    font-style: normal;
-    font-weight: 500;
+.team-name {
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -331,13 +221,7 @@ footer {
     color: var(--title-clr);
 }
 
-.comand-card>p {
-    width: 130px;
-    height: 19px;
-    left: 285px;
-    top: 1951px;
-    font-style: normal;
-    font-weight: 400;
+.team-text {
     font-size: 16px;
     line-height: calc(19 / 16);
     text-align: center;
@@ -345,30 +229,21 @@ footer {
     color: var(--txt-clr);
 }
 
-/* Портфоліо */
-
-.portfolio {
-    width: 1170px;
-    height: 1360px;
-    left: 215px;
-    top: 174px;
-}
-
 /* Кнопки навігації */
 
-.buttons>h2 {
+.btn-title {
     display: none;
 }
 
-.portfolio-list>button {
+.btn {
     background: var(--btn-bg-clr);
     border-radius: var(--border-radius);
     color: var(--title-clr);
     cursor: pointer;
 }
 
-.portfolio-list>button:hover,
-.portfolio-list>button:focus {
+.btn:hover,
+.btn:focus {
     background: var(--main-clr);
     color: var(--main-bg-clr);
 }
@@ -377,37 +252,18 @@ footer {
 
 
 
-.portfolio-main>h2 {
+.portfolio-title {
     display: none;
 }
 
-.portfolio-main-item{
-    width: 370px;
-    height: 404px;
-    left: 215px;
-    top: 696px;
-}
-
-.portfolio-main-item>h3{
-    width: 322px;
-    height: 36px;
-    left: 239px;
-    top: 576px;
-    font-style: normal;
-    font-weight: 700;
+.portfolio-name {
     font-size: 18px;
     line-height: calc(36 / 18);
     letter-spacing: 0.06em;
     color: var(--title-clr);
 }
 
-.portfolio-main-item>p {
-    width: 322px;
-    height: 30px;
-    left: 239px;
-    top: 616px;
-    font-style: normal;
-    font-weight: 400;
+.portfolio-text {
     font-size: 16px;
     line-height: calc(30 / 16);
     letter-spacing: 0.03em;
