@@ -102,6 +102,7 @@ footer {
 
 .location {
     display: list-item;
+    font-style: normal;
 }
 
 .location-link {
